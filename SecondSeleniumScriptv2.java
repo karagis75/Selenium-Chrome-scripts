@@ -28,7 +28,7 @@ public class SecondSeleniumScriptv2 {
 	    	System.out.println(title);
 	    		
 	
-	    //locate a Web element
+	    //locate a Web element using css selector
 		//String tagname = driver.findElement(By.cssSelector("#nav-orders")).getText();
 		//System.out.println(tagname);
 		//Thread.sleep(3000);
@@ -40,19 +40,12 @@ public class SecondSeleniumScriptv2 {
 		
 		
 		
-		//Drop down
+		//Click on category
 		driver.findElement(By.partialLinkText("Best Sellers")).click();
 		Thread.sleep(3000);
 		
 		
-		//click on first best seller
-		//driver.findElement(By.cssSelector("#a-meter-animate")).click();
-		//Thread.sleep(3000); 
-		//Drop down
-		//WebElement category = driver.findElement(By.cssSelector("#nav-orders"));
-		//Actions action =  new Actions(driver);
-		//action.moveToElement(category).perform();
-		//Thread.sleep(3000);
+	
 	    
 		driver.close();
 		driver.quit();
